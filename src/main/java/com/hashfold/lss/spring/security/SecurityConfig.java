@@ -27,7 +27,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 
 		http.authorizeRequests().antMatchers("/delete/**").hasRole("ADMIN").anyRequest().authenticated().and()
-				.formLogin().and().httpBasic();
+				.formLogin().loginPage("/login").permitAll().loginProcessingUrl("/doLogin").and().logout().permitAll()
+				.logoutUrl("/doLogout").clearAuthentication(true).and().csrf().disable();
 	}
 
 	@Bean
