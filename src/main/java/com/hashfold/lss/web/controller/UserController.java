@@ -1,4 +1,4 @@
-package com.baeldung.lss.web.controller;
+package com.hashfold.lss.web.controller;
 
 import javax.validation.Valid;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.baeldung.lss.persistence.UserRepository;
-import com.baeldung.lss.web.model.User;
+import com.hashfold.lss.persistence.UserRepository;
+import com.hashfold.lss.web.model.User;
 
 @Controller
 @RequestMapping("/")

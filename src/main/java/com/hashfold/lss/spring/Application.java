@@ -1,4 +1,4 @@
-package com.baeldung.lss.spring;
+package com.hashfold.lss.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,13 +6,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.convert.converter.Converter;
 
-import com.baeldung.lss.persistence.InMemoryUserRepository;
-import com.baeldung.lss.persistence.UserRepository;
-import com.baeldung.lss.web.model.User;
+import com.hashfold.lss.persistence.InMemoryUserRepository;
+import com.hashfold.lss.persistence.UserRepository;
+import com.hashfold.lss.web.model.User;
 
 @SpringBootApplication
-@ComponentScan("com.baeldung.lss.web")
-public class LssApp1 {
+@ComponentScan("com.hashfold.lss.web")
+public class Application {
 
     @Bean
     public UserRepository userRepository() {
@@ -30,7 +30,7 @@ public class LssApp1 {
     }
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(LssApp1.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }

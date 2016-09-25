@@ -1,6 +1,6 @@
-package com.baeldung.lss.persistence;
+package com.hashfold.lss.persistence;
 
-import com.baeldung.lss.web.model.User;
+import com.hashfold.lss.web.model.User;
 
 public interface UserRepository {
 

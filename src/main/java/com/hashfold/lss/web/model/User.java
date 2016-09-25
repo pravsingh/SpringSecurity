@@ -1,4 +1,4 @@
-package com.baeldung.lss.web.model;
+package com.hashfold.lss.web.model;
 
 import java.util.Calendar;
 
